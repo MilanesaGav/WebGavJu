@@ -1,0 +1,73 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+#lateral{
+    width: 8rem;
+    background-color: rgb(255, 234, 142);
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* para hacer columnassss con flex*/
+    gap: 18%;
+}
+.boton-lateral{
+    padding-left: 1rem;
+}
+#lateral-arriba{
+    padding-top: 3rem;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.info{
+    position:relative;
+    justify-content: center;
+    margin-left:60px;
+    margin-left: 100px;
+    border: 2px solid black;
+    width: 35rem;
+    height:95vh;
+    left:-3rem;
+}
+ 
+#fran{
+       
+    width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center; /*centra en eje x*/
+        align-items: center; /*centra en eje y*/
+        flex-direction: row;
+}
+
+.cora{
+    position: sticky;
+    justify-content: center;
+    align-items: bottom;
+    font-size:6rem;
+    bottom:-3rem;
+    margin-top: 23rem;
+}
+
+#cora-izq{
+ margin-right:4rem;   
+}
+
+#cora-der{
+    margin-left:4rem;   
+}
+
+#cuadrito{
+    position: relative;
+
+    border:solid 2px rgb(0, 0, 0);
+    margin-top:2rem;
+    margin-left:3.5rem;
+    width:80%;
+    height:67vh;
+    
+}
