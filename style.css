@@ -4,6 +4,11 @@ body{
     font-family: 'Inter', sans-serif;
     color: #f5f5dc;
 }
+ /*le saca el cosito azul a todos los <a> que tengan un href="" */
+a {
+  text-decoration: none; /*le saca la decoracion*/
+  color: inherit; /*le saca el color*/
+}
 
 #lateral{
     width: 8rem;
