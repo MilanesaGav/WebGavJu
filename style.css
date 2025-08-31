@@ -62,6 +62,7 @@ a {
     margin-top: 23rem;
 }
 
+/*Agranda los corazones cndo pasas el mouse por arriba*/ 
 .cora:hover{
     font-size:10rem;
 }
