@@ -62,6 +62,10 @@ a {
     margin-top: 23rem;
 }
 
+.cora:hover{
+    font-size:10rem;
+}
+
 #cora-izq{
  margin-right:4rem;   
 }
