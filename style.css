@@ -2,7 +2,7 @@ body{
     margin:0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    color: #f5f5dc;
+    color: #f7f7ef;
 }
  /*le saca el cosito azul a todos los <a> que tengan un href="" */
 a {
@@ -16,13 +16,20 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column; /* para hacer columnassss con flex*/
-    gap: 18%;
+    gap: 15%;
 }
+
 .boton-lateral{
     padding-left: 1rem;
 }
 #lateral-arriba{
     padding-top: 3rem;
+}
+
+.icono{
+    position: relative;
+    width:60%;
+    height:9vh;
 }
 .main-container{
     width: 100%;
@@ -64,8 +71,15 @@ a {
 
 /*Agranda los corazones cndo pasas el mouse por arriba*/ 
 .cora:hover{
-    font-size:10rem;
+    text-shadow:   1px    0px    20px        #de7481;
+    /*Sombra-txt  eje Y   eje X  Difuminacion  color  */
 }
+
+/* aca medio q no lo vamos a usar */
+/*.cora a:hover{
+    box-shadow: 0 0 15px #de748198;
+    
+}*/
 
 #cora-izq{
  margin-right:4rem;   
@@ -80,9 +94,14 @@ a {
     border:solid 2px rgb(0, 0, 0);
     margin-top:2rem;
     margin-left:3.5rem;
+    margin-right:3.5rem;
     width:80%;
     height:60vh;
     background-color: #de748198;
+    background-image: url('assets/img/HitMeHardAndSoft.png'); /* Ruta relativa */
+    background-size: cover; /* Cubre todo el div */
+    background-position: center; /* Centrado */
+    background-repeat: no-repeat; /* No se repite */
 }
 
 #container-datos{
