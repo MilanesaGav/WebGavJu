@@ -102,6 +102,7 @@ a {
     background-size: cover; /* Cubre todo el div */
     background-position: center; /* Centrado */
     background-repeat: no-repeat; /* No se repite */
+    box-shadow: 0 0 20px #000000;
 }
 
 #container-datos{
