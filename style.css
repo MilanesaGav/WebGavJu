@@ -465,17 +465,6 @@ button {
 
 /*H-A-S-T-A-----A-C-A-------M-U-S-I-N-D-E-R---------P-L-U-S*/
 
-#lateral-2{
-    width: 10%;
-    background: linear-gradient(to bottom right, #b95696, #f89142); /*si ponemos to bottom right podemos hacerlo en diagonal*/
-    height: 100vh;
-    display: flex;
-    flex-direction: column; /* para hacer columnassss con flex*/
-    gap: 15%;
-    position:fixed; /*para q se mantenga aunq scrollee*/
-    z-index: 100; /*para q se ponga arriba del fondo*/
-}
-
 .container-cards{
   width: 60%;
   background-color: #b64f48;
@@ -483,7 +472,7 @@ button {
   margin-top:80px;
   display: flex;
   gap: 20px;
-  z-index: 0;
+  margin-top: 5rem;
 }
 
 .card1{
