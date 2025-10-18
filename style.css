@@ -30,9 +30,8 @@ a {
 }
 
 .icono{
-    position: relative;
     width:60%;
-    height:9vh;
+    height:5rem;
 }
 .main-container{
     width: 100%;

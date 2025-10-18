@@ -1,3 +1,9 @@
+a,img {
+  text-decoration: none; /*le saca la decoracion*/
+  color: inherit; /*le saca el color*/
+  padding:0px;
+
+}
 
 #container-scroll{
     width:89%;
@@ -22,3 +28,4 @@
 .texto-cancion{
     margin-left: 1rem;
 }
+
