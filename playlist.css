@@ -1,8 +1,5 @@
-a,img {
-  text-decoration: none; /*le saca la decoracion*/
-  color: inherit; /*le saca el color*/
-  padding:0px;
-
+#mybtn{
+    padding-top: 0%;
 }
 
 #container-scroll{
