@@ -41,16 +41,16 @@ a {
 }
 
 .info{
-    position:relative;
-    justify-content: center;
-    margin-left:60px;
-    margin-left: 100px;
-    border: 2px solid black;
-    border-radius: 8px;
-    width: 35rem;
-    height:95vh;
-    left:-3rem;
-   box-shadow: 0 0 15px #de748198;
+  position:relative;
+  justify-content: center;
+  margin-left:60px;
+  margin-left: 100px;
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 35rem;
+  height:95vh;
+  left:-3rem;
+  box-shadow: 0 0 15px #3d4d2a98;
 }
  
 #fondo{

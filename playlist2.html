@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musinder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fondo.css">
+    <link rel="stylesheet" href="playlist.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- ESO ES PARA USAR LA FUENTE DE "INTER" QUE USA ESOUND, DESPUES LLAMARLA DESDE CSS (SE NECESITA INTERNET PARA Q FUNCIONE)-->
+</head>
+<body>
+<div class="main-container">
+    <aside>
+        <nav id="lateral">
+            <a class="boton-lateral lateral-arriba" id="mybtn" href="#"><img src="assets/img/UsuarioLogo.png" class="icono"></a>
+            <a class="boton-lateral" href="#">Playlist</a>
+            <a class="boton-lateral" href="#">Mi expediente</a>
+            <a class="boton-lateral" href="#">Musinder+</a>
+            <a class="boton-lateral" id="lateral-abajo" href="#">Cerrar Sesion</a>
+        </nav>
+    </aside>
+
+    <div id="container-scroll">
+        <h1 id="titulo-p"> Tu playlist</h1>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+        <div class="cancion"><p class="texto-cancion">loba - shakira</p></div>
+    </div>
+</div> 
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times </span>
+        <form action="action_page.php" method="post">
+          
+            <div class="container">
+              <label for="uname"><b>Usuario</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Iniciar sesion</button>
+              <label>
+                <a name="remember"> Olvido su contraseña?
+              </label>
+            </div>
+          
+          </form>
+    </div>
+</div>
+<script src="modal.js"></script>
+</body>
+</html>
