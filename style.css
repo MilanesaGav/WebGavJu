@@ -3,6 +3,7 @@ body{
     padding: 0;
     font-family: 'Inter', sans-serif;
     color: #f7f7ef;
+    background-color: rgb(28, 31, 30);
 }
  /*le saca el cosito azul a todos los <a> que tengan un href="" */
 a {
@@ -11,18 +12,20 @@ a {
 }
 
 #lateral{
-    width: 8rem;
+    width: 10%;
     background: linear-gradient(to bottom right, #b95696, #f89142); /*si ponemos to bottom right podemos hacerlo en diagonal*/
     height: 100vh;
     display: flex;
     flex-direction: column; /* para hacer columnassss con flex*/
     gap: 15%;
+    position:fixed; /*para q se mantenga aunq scrollee*/
+    z-index: 100; /*para q se ponga arriba del fondo*/
 }
 
 .boton-lateral{
     padding-left: 1rem;
 }
-#lateral-arriba{
+.lateral-arriba{
     padding-top: 3rem;
 }
 
@@ -113,6 +116,47 @@ a {
     height:10vh;
     color:#d7d7ce
 }
+
+/*MODAAAAAAAAAAAAAAAAAAAAL*/
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: hsla(0, 0%, 0%, 0.5); /* Fondo semi-transparente */
+  }
+  
+
+  .modal-content {
+    background: linear-gradient(to bottom right, #b95696, #f89142);
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 23rem;
+    height: 23rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    box-shadow: #000000;
+    overflow-y: auto; /* Permite scroll si el contenido es muy largo */
+  }
+  
+  .close {
+    color: rgb(255, 255, 255);
+    margin-right:1rem;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close:hover {
+    color:  #aaa;;
+  }
+  
+
  /*ESTOY INTENTANDO PONER EL COSO DE BILLIE D:*/
  /* lo saque XDDDD */
 /* #cuadrito img {
@@ -121,3 +165,328 @@ a {
   object-fit: cover; /* mantiene proporción sin deformar */
   /* filter: brightness(0.8); opcional para oscurecer */
 /* } */ 
+
+/*login form*/
+form {
+    border-radius: 1rem;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px; /* Da bordes redondeados */
+}
+
+button {
+    background-color: #b64f48;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px; /* Bordes redondeados para el botón */
+}
+
+  
+
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: transparent;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* SACADO DE W3SCHOOL */
+.container label {
+    margin-top: 10px;
+    display: block; /* Asegura que las etiquetas se alineen correctamente */
+}
+
+.container {
+    margin: 20px 0; /* Espacio entre los elementos del formulario */
+}
+
+.close {
+    padding: 10px;
+    font-size: 18px; /* Un tamaño más pequeño */
+}
+
+
+
+/* DESDE ACA LO DE LA PLYLIST */
+
+#titulo-playlist{
+  display: inline-block;
+  position: absolute;
+  left:40%;
+  top:-2rem;
+  font-size: 4rem;
+}
+
+.cancion-playlist{
+  display: inline-block;
+  width:89%;
+  font-size: 1rem;
+  position:absolute;
+  left:8rem;
+  top: 15vh;
+  border-top: 1px solid rgba(250, 250, 250, 0.753) ;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.753) ;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left:1rem;
+  z-index:10;
+}
+
+#border{
+  padding:0rem;
+  width:100%;
+  box-shadow: 0 0 15px beige;
+}
+
+#cancion1{
+  top:15vh;
+}
+
+#cancion2{
+  top:24vh;
+  border-top:0;
+}
+
+#cancion3{
+  top:33vh;
+  border-top:0;
+}
+
+#cancion4{
+  top:42vh;
+  border-top:0;
+}
+
+#cancion5{
+  top:51vh;
+  border-top:0;
+}
+
+#cancion6{
+  top:60vh;
+  border-top:0;
+}
+
+#cancion7{
+  top:69vh;
+  border-top:0;
+}
+
+#cancion8{
+  top:78vh;
+  border-top:0;
+}
+
+#cancion9{
+  top:87vh;
+  border-top:0;
+}
+
+#cancion10{
+  top:96vh;
+  border-top:0;
+}
+
+#cancion11{
+  top:105vh;
+  border-top:0;
+}
+
+#cancion12{
+  top:114vh;
+  border-top:0;
+}
+
+#cancion12{
+  top:114vh;
+  border-top:0;
+}
+
+#cancion13{
+  top:123vh;
+  border-top:0;
+}
+
+#cancion14{
+  top:132vh;
+  border-top:0;
+}
+
+#cancion15{
+  top:141vh;
+  border-top:0;
+}
+
+#cancion16{
+  top:150vh;
+  border-top:0;
+}
+
+#cancion17{
+  top:159vh;
+  border-top:0;
+}
+
+#cancion18{
+  top:168vh;
+  border-top:0;
+}
+
+#cancion19{
+  top:177vh;
+  border-top:0;
+}
+
+#cancion20{
+  top:186vh;
+  border-top:0;
+}
+/* HASTA ACA LO DE LA PLYLIST */
+
+/*DEEEESDEEE ACAAAA LOOO DEEE E-X-P-E-D-I-E-N-T-E*/
+
+.texto-exp,
+.genero{
+  position: relative;
+  font-size:2rem;
+}
+
+.genero{
+  font-size:5rem;
+}
+#container-exp{
+  width:90%;
+  margin-left:10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#titulo-exp{
+  margin:2vh;
+  font-size:4rem ;
+  padding-bottom: 1rem;
+  justify-items: center;
+  text-shadow: 0 0 5px beige;
+}
+/* #border-exp{  NO CUMPLENINGUNA FUNXION X ESOLO SACO
+  position: relative;
+  left:0px;
+  padding:0rem;
+  width:100%;
+  box-shadow: 0 0 15px beige;
+} */
+
+#artista-nombre{
+  left:3rem;
+}
+ 
+#artista{
+  position: absolute;
+  width:12%;
+  height:23vh;
+  bottom:1vh;
+  left:23%;
+}
+
+.estadisticas{
+  width:70%;
+  height:60vh;
+  display:block;
+  margin-bottom: 8rem;
+}
+
+.gen-text{
+  font-size: 2rem;
+}
+
+#titulo-exp-est{
+  margin-top:10rem ;
+  margin-bottom: 4rem;
+  font-size:3rem ;
+  border-bottom: 2px solid #b95696;
+}
+
+/*HASTAAAAAA ACAAAA LOOO DEEE E-X-P-E-D-I-E-N-T-E*/
+
+/*D-E-S-D-E-----A-C-A-------M-U-S-I-N-D-E-R---------P-L-U-S*/
+
+.container-promo{
+  width:35%;
+  height:76vh;
+  border: 2px solid pink;
+  border-radius:8px ;
+  position:relative;
+  display:inline-block;
+  top:0vh;
+  margin-bottom:1rem;
+  margin-left:7rem;
+}
+
+
+/*H-A-S-T-A-----A-C-A-------M-U-S-I-N-D-E-R---------P-L-U-S*/
+
+#lateral-2{
+    width: 10%;
+    background: linear-gradient(to bottom right, #b95696, #f89142); /*si ponemos to bottom right podemos hacerlo en diagonal*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* para hacer columnassss con flex*/
+    gap: 15%;
+    position:fixed; /*para q se mantenga aunq scrollee*/
+    z-index: 100; /*para q se ponga arriba del fondo*/
+}
+
+.container-cards{
+  width: 60%;
+  background-color: #b64f48;
+  height: 500px;
+  margin-top:80px;
+  display: flex;
+  gap: 20px;
+  z-index: 0;
+}
+
+.card1{
+  border: 1px solid black;
+  width: 50%;  
+}

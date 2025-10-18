@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musinder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fondo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- ESO ES PARA USAR LA FUENTE DE "INTER" QUE USA ESOUND, DESPUES LLAMARLA DESDE CSS (SE NECESITA INTERNET PARA Q FUNCIONE)-->
+</head>
+<body>
+
+<div class="main-container"> <!-- DIV PADRE EN DONDE VA TODO-->    
+    <aside>
+        <nav id="lateral">
+            <a class="boton-lateral lateral-arriba" id="mybtn" href="#"><img src="assets/img/UsuarioLogo.png" class="icono"></a>
+            <a class="boton-lateral" href="#">Playlist</a>
+            <a class="boton-lateral" href="#">Mi expediente</a>
+            <a class="boton-lateral" href="#">Musinder+</a>
+            <a class="boton-lateral" id="lateral-abajo" href="#">Cerrar Sesion</a>
+        </nav>
+    </aside>
+    <div id="container-exp">
+        <h1  id="titulo-exp">Tu expediente</h1>
+        
+        <h2 class="texto-exp">TU GENERO MUSICAL MÁS ESCUCHADO ES...</h2>
+        <h2 class="genero">POP</h2>
+        <h2 class="texto-exp">TU ARTISTA MÁS ESCUCHADO ES...</h2>
+        <h2 class="genero" id="artista-nombre">Taylor Swift</h2>
+        <img id="artista" src="assets/img/UsuarioLogo.png"></img>
+        <h2 id="titulo-exp-est">TUS ESTADISTICAS</h2>
+        <h3 class="gen-text" if>Genero mas escuchado</h3>
+        <img class="estadisticas" src="assets/img/barras.jpg"></img>
+        <h3 class="gen-text">Artista mas guardado</h3>
+        <img class="estadisticas" src="assets/img/barras.jpg"></img>
+       
+    </div> 
+    
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times </span>
+        <form action="action_page.php" method="post">
+          
+            <div class="container">
+              <label for="uname"><b>Usuario</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Iniciar sesion</button>
+              <label>
+                <a name="remember"> Olvido su contraseña?
+              </label>
+            </div>
+          
+          </form>
+    </div>
+</div>
+<script src="modal.js"></script>
+</body>
+</html>
