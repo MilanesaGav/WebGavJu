@@ -12,7 +12,7 @@
 
 .cancion{
     width: 100%;
-    height:3rem;
+    height:3rem; /*el height se puede llegar a sacar para que las canciones se "amolden" al texto */
     border:1px solid white;
     box-shadow: 0 0 8px #ffffff7e;
     margin-bottom:0px;
@@ -20,5 +20,43 @@
 
 .texto-cancion{
     margin-left: 1rem;
+    font-size: 1rem;
+
+    /*de aca*/
+    width: 95%; /* Ajustar el ancho para que abarque casi todo el .cancion */
+    display: flex; /* Habilitar Flexbox */
+    justify-content: space-between; /* Empujar los elementos (texto y minutero) a los extremos */
+    align-items: center; /* Opcional: Centrar verticalmente si la altura de la canción cambia */
+    /*hasta aca no se como funciona lo del flex space-between DESPUES INVESTIGAR*/
 }
 
+.minutero{
+    /* La propiedad "justify-content: right" no funca en flex asiq ponemos margen  */
+    margin-right: 1rem;
+}
+
+#descargar{
+    width:85px;
+    height: 85px;
+    border:solid 3px  #f7f7ef;
+    box-shadow:0 0 30px #000000;
+    background: linear-gradient(to bottom right, #b95696, #f89142);
+    z-index: 101;
+    position:fixed ;
+    left:83%;
+    top:75vh;
+    border-radius: 60px;
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#subrayadito{
+    border-bottom: solid 4px#f7f7ef;
+}
+
+#descargar:hover{
+    color:linear-gradient(to bottom right, #b95696, #f89142);
+    background-color:#f7f7ef; ;
+}
