@@ -20,6 +20,7 @@ a {
     gap: 15%;
     position:fixed; /*para q se mantenga aunq scrollee*/
     z-index: 100; /*para q se ponga arriba del fondo*/
+    top: 0;
 }
 
 .boton-lateral{

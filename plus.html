@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musinder</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plus.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- ESO ES PARA USAR LA FUENTE DE "INTER" QUE USA ESOUND, DESPUES LLAMARLA DESDE CSS (SE NECESITA INTERNET PARA Q FUNCIONE)-->
 </head>
@@ -19,7 +20,35 @@
             <a class="boton-lateral" id="lateral-abajo" href="#">Cerrar Sesion</a>
         </nav>
     </aside>
+    <h1 id="plus-titulo">¡Elige tu promo!</h1>
 
+    <div class="tarjetas-container">
+        <div class="card">
+            <h2 class="nombre-plan">Mensual</h2>
+            <p class="precio-plan">$1532<span class="mini-desc">/Mes</span></p>
+            <ul class="lista-check" id="plan1">
+                <li>Playlist sin limite</li>
+                <li>Millones de artistas</li>
+                <li>No mas anuncios</li>
+                <li>Todos los generos musicales</li>
+                <li>Cancela cuando quieras</li>
+            </ul>
+            <button type="submit" id="plan"><b>HAZTE PREMIUM</b></button>
+        </div>
+        <div class="card">
+            <h2 class="nombre-plan">Anual</h2>
+            <p class="precio-plan">$16354<span class="mini-desc">/Año</span></p>
+            <ul class="lista-check" id="plan2">
+                <li>Playlist sin limite</li>
+                <li>Millones de artistas</li>
+                <li>No mas anuncios</li>
+                <li>Todos los generos musicales</li>
+                <li>Cancela cuando quieras</li>
+                <li>Más tiempo por menor costo</li>
+            </ul>
+            <button type="submit" id="plan"><b>HAZTE PREMIUM</b></button>
+        </div>
+    </div>
 
 
 <div id="myModal" class="modal">

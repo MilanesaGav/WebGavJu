@@ -1,0 +1,99 @@
+#plus-titulo{
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.tarjetas-container {
+  margin-left: 10%;      /* igual al ancho de la barra lateral */
+  display: flex;
+  justify-content: center; 
+  /* centra las cards en el eje x */
+  align-items: flex-end; 
+  /*centras las tarjetas en donde yo quiera(dentro del contenedor) del eje Y */
+  gap: 2rem;             
+  /* espacio entre las cards */
+  padding: 2rem 0;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(255, 255, 255, 0.267);
+    width: 26vw;           /* o un ancho fijo como 400px */
+    height: 70vh;          /* o auto si querés que crezca con el contenido */
+    color: #fff;
+    display: flex;
+    align-items: center; /*lo mismo q arriba (tarjetas-container)*/
+    justify-content: center;/*lo mismo q arriba x2*/
+    font-size: 2rem;
+    flex-direction: column; /* es para que las cosas se alinien una abajo de la otra */
+}
+
+.nombre-plan{
+    margin:0;
+    font-size:2rem;
+
+}
+.precio-plan{
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.589);
+    font-size: 3rem;
+    margin-bottom:1rem;
+}
+
+.mini-desc{
+    color:#ffffff8d;
+    text-shadow: 0 0 15px #ffffff8d;
+    font-size: 1.5rem;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    font-size: 1rem;
+    margin-right:8rem;
+   
+}
+
+li{
+    margin-bottom: 6px;
+    color:#ffffffd7; ;
+}
+
+.lista-check {
+    /*hacemos un antes*/
+    list-style: none; /* eso le saca el redondito por defecto y lo deja "vacio" */
+    padding-left: 0; 
+}
+
+.lista-check li::before {
+    /*y un despues para que la maquina nos "acepte" que el item de la lista es un tilde*/
+    content: "✔ ";
+    color: rgb(26, 154, 26);
+    text-shadow: 0 0 5px rgb(26, 154, 26) ;
+}
+#plan1{
+    margin-bottom:4.6rem;
+}
+
+#plan2{
+    margin-bottom:2.8rem;
+}
+
+#plan {
+    background-color: #b64f48;
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 50px; /* Bordes redondeados para el botón */
+}
+
+#plan:hover{
+    background: linear-gradient(to bottom left, #b95696, #f89142); /*si ponemos to bottom right podemos hacerlo en diagonal*/
+    box-shadow:0 0 15px #b64f48;
+    color: #fff;
+    text-shadow:0 0 15px white ;
+    font-size: 1.5rem;
+}
