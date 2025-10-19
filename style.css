@@ -17,14 +17,16 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column; /* para hacer columnassss con flex*/
-    gap: 10%; /*espaciado entre los items de la barra lateral*/
+    gap: 8%; /*espaciado entre los items de la barra lateral*/
     position:fixed; /*para q se mantenga aunq scrollee*/
     z-index: 100; /*para q se ponga arriba del fondo*/
     top: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .boton-lateral{
-    padding-left: 1rem;
+   
 }
 .lateral-arriba{
     padding-top: 3rem;
@@ -36,8 +38,8 @@ a {
 
 
 .icono{
-    width:60%;
-    height:5rem;
+    width:90%;
+    height:4rem;
 }
 .main-container{
     width: 100%;

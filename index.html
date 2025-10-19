@@ -16,6 +16,7 @@
         <nav id="lateral">
             <a class="boton-lateral lateral-arriba" id="mybtn" href="#"><img src="assets/img/UsuarioLogo.png" class="icono"></a>
             <a class="boton-lateral" href="playlist2.html"><img src="assets/img/playlist.png" class="icono"></a>
+            <a class="boton-lateral" href="index.html"><img src="assets/img/casa.png" class="icono"></a>
             <a class="boton-lateral" href="expediente.html"><img src="assets/img/Estadisticas.png" class="icono"></a>
             <a class="boton-lateral" href="plus.html"><img src="assets/img/UsuarioLogo.png" class="icono"></a><!-- usamos el d usuario dewelta pq no hay logo de musinder todavia -->
             <a class="boton-lateral" id="lateral-abajo" href="#"><img src="assets/img/CerrarSesion.png" class="icono"></a>
@@ -52,5 +53,27 @@
     
 </div>
 
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times </span>
+        <form action="action_page.php" method="post">
+          
+            <div class="container">
+              <label for="uname"><b>Usuario</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Iniciar sesion</button>
+              <label>
+                <a name="remember"> Olvido su contraseña?
+              </label>
+            </div>
+          
+          </form>
+    </div>
+</div>
+<script src="modal.js"></script>
 </body>
 </html>
