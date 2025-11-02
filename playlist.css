@@ -60,3 +60,47 @@
     color:linear-gradient(to bottom right, #b95696, #f89142);
     background-color:#f7f7ef; ;
 }
+
+/* COSAS NUEVS (TABLA) */
+
+caption{
+    font-size: 3.5rem;
+    padding-bottom: 10px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.74);
+}
+
+table, th, td {
+    border-collapse: collapse; /*para q nos permita poner los bordes*/
+}
+#tabla-p{
+    width:96%;
+    text-align: center;
+ 
+}
+
+tr{
+    /*usamos tr sin ningun id para que todas las canciones aparezcan con esta configuracion*/
+    height: 2.5rem;
+    border-top: 1px solid  rgba(255, 255, 255, 0.322);
+    border-bottom:1px solid  rgba(255, 255, 255, 0.322);
+ }
+
+ #t1{
+    color:rgb(195,95,137);
+    text-shadow:0 0 8px rgb(195,95,137);
+ }
+
+#t2{
+    color:rgb(208,108,119);
+    text-shadow:0 0 8px rgb(208,108,119);
+ }
+
+#t3{
+    color:rgb(227,126,93);
+    text-shadow:0 0 8px rgb(227,126,93);
+ } 
+
+#t4{
+    color:rgb(242,139,74);
+    text-shadow:0 0 8px rgb(242,139,74);
+ }  

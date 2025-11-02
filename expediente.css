@@ -1,0 +1,37 @@
+.main-container-expe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container-expe{
+  margin-left: 10%;      /* igual al ancho de la barra lateral */
+  display: flex;
+  justify-content: center; 
+  /* centra las cards en el eje x */
+  width:90%;
+  /*align-items: flex-end; centras las tarjetas en donde yo quiera(dentro del contenedor) del eje Y */
+  gap: 14rem;             
+  /* espacio entre las cards */
+  padding: 2rem 0;
+
+}
+
+.textito-exp{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-size: 1.5rem;
+    margin:0px;
+   
+}
+
+#exp-titulo{
+     font-size: 3rem;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.artista{
+    font-size: 2rem;
+    
+}
