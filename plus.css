@@ -7,6 +7,7 @@
 .tarjetas-container {
   margin-left: 10%;      /* igual al ancho de la barra lateral */
   display: flex;
+  flex-direction: row;
   justify-content: center; 
   /* centra las cards en el eje x */
   align-items: flex-end; 

@@ -12,39 +12,44 @@ a {
 }
 
 #lateral{
-    width: 10%;
-    background: linear-gradient(to bottom right, #b95696, #f89142); /*si ponemos to bottom right podemos hacerlo en diagonal*/
-    height: 100vh;
-    display: flex;
-    flex-direction: column; /* para hacer columnassss con flex*/
-    gap: 8%; /*espaciado entre los items de la barra lateral*/
-    position:fixed; /*para q se mantenga aunq scrollee*/
-    z-index: 100; /*para q se ponga arriba del fondo*/
-    top: 0;
-    align-items: center;
-    justify-content: center;
+  width: 10%;
+  background: linear-gradient(to bottom right, #b95696, #f89142); /*si ponemos to bottom right podemos hacerlo en diagonal*/
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* para hacer columnassss con flex*/
+  gap: 8%; /*espaciado entre los items de la barra lateral*/
+  position:fixed; /*para q se mantenga aunq scrollee*/
+  z-index: 100; /*para q se ponga arriba del fondo*/
+  top: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .lateral-arriba{
-    padding-top: 3rem;
+  padding-top: 3rem;
 }
 
 #mybtn{
-    padding-top: 0%;
+  padding-top: 1rem;
 }
 
 
 .icono{
-    width:90%;
-    height:4rem;
+  width:90%;
+  height:4rem;
 }
 .main-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+  margin-left: 10%;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /*centra en eje x*/
+  align-items: center; /*centra en eje y*/
 }
 
+/*no se usa*/
 .info{
   position:relative;
   justify-content: center;
@@ -58,22 +63,10 @@ a {
   box-shadow: 0 0 15px #3d4d2a98;
 }
  
-#fondo{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center; /*centra en eje x*/
-    align-items: center; /*centra en eje y*/
-    flex-direction: row;
-    background-color: rgb(28, 31, 30);
-}
-
 .cora{
-    position: sticky;
     justify-content: center;
     align-items: bottom;
     font-size:6rem;
-    bottom:-3rem;
     margin-top: 23rem;
 }
 
@@ -197,7 +190,6 @@ button {
     border-radius: 5px; /* Bordes redondeados para el botón */
 }
 
-  
 
   /* Add a hover effect for buttons */
   button:hover {
@@ -251,236 +243,3 @@ button {
 
 
 
-/* DESDE ACA LO DE LA PLYLIST */
-
-#titulo-playlist{
-  display: inline-block;
-  position: absolute;
-  left:40%;
-  top:-2rem;
-  font-size: 4rem;
-}
-
-.cancion-playlist{
-  display: inline-block;
-  width:89%;
-  font-size: 1rem;
-  position:absolute;
-  left:8rem;
-  top: 15vh;
-  border-top: 1px solid rgba(250, 250, 250, 0.753) ;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.753) ;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left:1rem;
-  z-index:10;
-}
-
-#border{
-  padding:0rem;
-  width:100%;
-  box-shadow: 0 0 15px beige;
-}
-
-#cancion1{
-  top:15vh;
-}
-
-#cancion2{
-  top:24vh;
-  border-top:0;
-}
-
-#cancion3{
-  top:33vh;
-  border-top:0;
-}
-
-#cancion4{
-  top:42vh;
-  border-top:0;
-}
-
-#cancion5{
-  top:51vh;
-  border-top:0;
-}
-
-#cancion6{
-  top:60vh;
-  border-top:0;
-}
-
-#cancion7{
-  top:69vh;
-  border-top:0;
-}
-
-#cancion8{
-  top:78vh;
-  border-top:0;
-}
-
-#cancion9{
-  top:87vh;
-  border-top:0;
-}
-
-#cancion10{
-  top:96vh;
-  border-top:0;
-}
-
-#cancion11{
-  top:105vh;
-  border-top:0;
-}
-
-#cancion12{
-  top:114vh;
-  border-top:0;
-}
-
-#cancion12{
-  top:114vh;
-  border-top:0;
-}
-
-#cancion13{
-  top:123vh;
-  border-top:0;
-}
-
-#cancion14{
-  top:132vh;
-  border-top:0;
-}
-
-#cancion15{
-  top:141vh;
-  border-top:0;
-}
-
-#cancion16{
-  top:150vh;
-  border-top:0;
-}
-
-#cancion17{
-  top:159vh;
-  border-top:0;
-}
-
-#cancion18{
-  top:168vh;
-  border-top:0;
-}
-
-#cancion19{
-  top:177vh;
-  border-top:0;
-}
-
-#cancion20{
-  top:186vh;
-  border-top:0;
-}
-/* HASTA ACA LO DE LA PLYLIST */
-
-/*DEEEESDEEE ACAAAA LOOO DEEE E-X-P-E-D-I-E-N-T-E*/
-
-.texto-exp,
-.genero{
-  position: relative;
-  font-size:2rem;
-}
-
-.genero{
-  font-size:5rem;
-}
-#container-exp{
-  width:90%;
-  margin-left:10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#titulo-exp{
-  margin:2vh;
-  font-size:4rem ;
-  padding-bottom: 1rem;
-  justify-items: center;
-  text-shadow: 0 0 5px beige;
-}
-/* #border-exp{  NO CUMPLENINGUNA FUNXION X ESOLO SACO
-  position: relative;
-  left:0px;
-  padding:0rem;
-  width:100%;
-  box-shadow: 0 0 15px beige;
-} */
-
-#artista-nombre{
-  left:3rem;
-}
- 
-#artista{
-  position: absolute;
-  width:12%;
-  height:23vh;
-  bottom:1vh;
-  left:23%;
-}
-
-.estadisticas{
-  width:70%;
-  height:60vh;
-  display:block;
-  margin-bottom: 8rem;
-}
-
-.gen-text{
-  font-size: 2rem;
-}
-
-#titulo-exp-est{
-  margin-top:10rem ;
-  margin-bottom: 4rem;
-  font-size:3rem ;
-  border-bottom: 2px solid #b95696;
-}
-
-/*HASTAAAAAA ACAAAA LOOO DEEE E-X-P-E-D-I-E-N-T-E*/
-
-/*D-E-S-D-E-----A-C-A-------M-U-S-I-N-D-E-R---------P-L-U-S*/
-
-.container-promo{
-  width:35%;
-  height:76vh;
-  border: 2px solid pink;
-  border-radius:8px ;
-  position:relative;
-  display:inline-block;
-  top:0vh;
-  margin-bottom:1rem;
-  margin-left:7rem;
-}
-
-
-/*H-A-S-T-A-----A-C-A-------M-U-S-I-N-D-E-R---------P-L-U-S*/
-
-.container-cards{
-  width: 60%;
-  background-color: #b64f48;
-  height: 500px;
-  margin-top:80px;
-  display: flex;
-  gap: 20px;
-  margin-top: 5rem;
-}
-
-.card1{
-  border: 1px solid black;
-  width: 50%;  
-}
