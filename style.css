@@ -17,7 +17,7 @@ a {
   height: 100vh;
   display: flex;
   flex-direction: column; /* para hacer columnassss con flex*/
-  gap: 8%; /*espaciado entre los items de la barra lateral*/
+  gap: 7%; /*espaciado entre los items de la barra lateral*/
   position:fixed; /*para q se mantenga aunq scrollee*/
   z-index: 100; /*para q se ponga arriba del fondo*/
   top: 0;

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musinder</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal2.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- ESO ES PARA USAR LA FUENTE DE "INTER" QUE USA ESOUND, DESPUES LLAMARLA DESDE CSS (SE NECESITA INTERNET PARA Q FUNCIONE)-->
 </head>
@@ -35,8 +36,8 @@
               <!--Lo saque pq jaja lol no andaba <img src="/assets/img/HitMeHardAndSoft.png"> -->
             </div>
             <div id="container-datos">
-                    <h2> NOMBRE ARTISTA</h2>
-                    <h3>cancion</h3>
+                    <h2>CANCION</h2>
+                    <h3>artista</h3>
                     <!-- BARRA MULTIMEDIA TRUCHA-->
                     <img src="assets/img/multimedia.png" id="multimedia">
             </div>
@@ -69,6 +70,24 @@
                 <a name="remember"> Olvido su contraseña?
               </label>
             </div>
+          
+          </form>
+    </div>
+</div>
+
+<div id="modal2" class="modalcerrarses">
+    <div class="contenido-cerrarses">
+            <div class="container"> <!-- el contenido del modal (determina su ancho alto etcetc)-->
+                <div id="container-flex-columna">
+                    <p id="question">¿Desea cerrar sesion?</p>
+                    <div id="container-flex-modal"><!-- el primer flex:column (para poder poner el texto arriba de los botones)-->
+                        
+                        <button  type="button" id="submit">Aceptar</button>
+                        <button type="button" id="cerrar">Cancelar</button>
+                    </div>  
+                </div>
+            </div>
+             
           
           </form>
     </div>

@@ -14,6 +14,15 @@
   /* espacio entre las cards */
   padding: 2rem 0;
 
+
+}
+
+#container-arriba{
+    padding-bottom:0px;
+}
+
+#container-abajo{
+    padding-top:0px;
 }
 
 .textito-exp{
@@ -22,7 +31,7 @@
     align-items: center; 
     font-size: 1.5rem;
     margin:0px;
-   
+
 }
 
 #exp-titulo{
@@ -33,5 +42,6 @@
 
 .artista{
     font-size: 2rem;
+    margin-top: -5%;
     
 }
