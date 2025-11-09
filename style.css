@@ -30,6 +30,10 @@ a {
   padding-top: 3rem;
 }
 
+#dinero{
+  font-size: 3rem;
+}
+
 #mybtn{
   padding-top: 1rem;
 }
@@ -123,7 +127,7 @@ a {
 
 /*MODAAAAAAAAAAAAAAAAAAAAL*/
 .modal {
-    display: none; /* Oculto por defecto */
+    display: none; /* Oculto por defecto, dsp js lo hace visible */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -171,18 +175,22 @@ a {
 /* } */ 
 
 /*login form*/
-form {
+#formulario-inises {
     border-radius: 1rem;
+    padding: 16px;
+    margin: 20px 0;
   }
+
   
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 5px; /* Da bordes redondeados */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  /* EJES    Y   X*/
+  margin:   8px   0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /*que se incluya el borde y padding denrto del tamaño del form*/
+  border-radius: 5px; /* Da bordes redondeados */
 }
 
 button {
@@ -222,9 +230,6 @@ button {
   }
   
   /* Add padding to containers */
-  .container {
-    padding: 16px;
-  }
   
   /* The "Forgot password" text */
   span.psw {
@@ -233,14 +238,8 @@ button {
   }
   
   /* SACADO DE W3SCHOOL */
-.container label {
-    margin-top: 10px;
-    display: block; /* Asegura que las etiquetas se alineen correctamente */
-}
 
-.container {
-    margin: 20px 0; /* Espacio entre los elementos del formulario */
-}
+
 
 .close {
     padding: 10px;

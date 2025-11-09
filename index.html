@@ -17,7 +17,7 @@
             <a class="boton-lateral" href="playlist2.html"><img src="assets/img/playlist.png" class="icono"></a>
             <a class="boton-lateral" href="index.html"><img src="assets/img/casa.png" class="icono"></a>
             <a class="boton-lateral" href="expediente2.html"><img src="assets/img/Estadisticas.png" class="icono"></a>
-            <a class="boton-lateral" href="plus.html"><img src="assets/img/UsuarioLogo.png" class="icono"></a><!-- usamos el d usuario dewelta pq no hay logo de musinder todavia -->
+            <a class="boton-lateral" id="dinero" href="plus.html">$</a>
             <a class="boton-lateral" id="lateral-abajo" href="#"><img src="assets/img/CerrarSesion.png" class="icono"></a>
         </nav>
     </aside>
@@ -53,16 +53,26 @@
     
 </div>
 
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times </span>
-        <form action="action_page.php" method="post">
+<!-- 
+    El <div id="myModal" class="modal"> es para que "agarre" toda la pagina, y se ponga por ensima de todo
+    
+    El <div class="modal-content"> es el que realmente define el tamaño del coso de iniciar sesion, el color y tda la bola
+
+    El <div class="container"> tiene como unico proposito el de hacer una cajita dentro del div "modal-content" para ponerle un margen y padding a td eso
+
+
+-->
+
+<div id="myModal" class="modal"> <!-- ocupa tda la pantalla y es el que dice ocultense o muestrense a los de adentro-->
+    <div class="modal-content"> <!-- el cuadro de iniciar sesion como tal -->
+        <span class="close">&times </span> <!-- la X (&times == X) de cerrar-->
+        <form  method="post" id="formulario-inises">
           
-            <div class="container">
-              <label for="uname"><b>Usuario</b></label>
+       
+              <label for="uname" class="label-inises"><b>Usuario</b></label>
               <input type="text" placeholder="Enter Username" name="uname" required>
           
-              <label for="psw"><b>Contraseña</b></label>
+              <label for="psw" class="label-inises"><b>Contraseña</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
           
               <button type="submit">Iniciar sesion</button>
@@ -71,7 +81,7 @@
               </label>
             </div>
           
-          </form>
+
     </div>
 </div>
 
