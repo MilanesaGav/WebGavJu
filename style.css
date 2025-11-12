@@ -7,7 +7,7 @@ body{
 }
  /*le saca el cosito azul a todos los <a> que tengan un href="" */
 a {
-  text-decoration: none; /*le saca la decoracion*/
+  text-decoration: none; /*le saca la decoracion al texto hrefeado*/
   color: inherit; /*le saca el color*/
 }
 
