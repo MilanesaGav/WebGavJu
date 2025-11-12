@@ -22,7 +22,7 @@ a {
   display: flex;
   flex-direction: column; /* para hacer columnassss con flex*/
   gap: 7%; /*espaciado entre los items de la barra lateral*/
-  position:fixed; /*para q se mantenga aunq scrollee*/
+  position:fixed; /*para q se mantenga aunq scrollee, y para q no se vaya para abajo*/
   z-index: 100; /*para q se ponga arriba del fondo*/
   top: 0;
   align-items: center;
@@ -133,7 +133,7 @@ Column: Align items: x
   height: 3.5rem;
 }
 
-/*MODAAAAAAAAAAAAAAAAAAAAL*/
+/*MODAAAAAAAAAAAAAAAAAAAAL INICIAR SESION*/
 .modal {
     display: none; /* Oculto por defecto, dsp js lo hace visible */
     position: fixed;
@@ -173,14 +173,6 @@ Column: Align items: x
   }
   
 
- /*ESTOY INTENTANDO PONER EL COSO DE BILLIE D:*/
- /* lo saque XDDDD */
-/* #cuadrito img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* mantiene proporción sin deformar */
-  /* filter: brightness(0.8); opcional para oscurecer */
-/* } */ 
 
 /*login form*/
 #formulario-inises {
@@ -225,19 +217,6 @@ button {
     background-color: transparent;
   }
   
-  /* Center the avatar image inside this container */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-  }
-  
-  /* Avatar image */
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
-  }
-  
-  /* Add padding to containers */
   
   /* The "Forgot password" text */
   span.psw {
