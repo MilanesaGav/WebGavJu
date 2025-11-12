@@ -1,3 +1,4 @@
+/*-----------DESDE ACA ARREGLOS GENERALES-----------*/
 body{
     margin:0;
     padding: 0;
@@ -10,7 +11,10 @@ a {
   text-decoration: none; /*le saca la decoracion al texto hrefeado*/
   color: inherit; /*le saca el color*/
 }
+/*-----------HASTA ACA ARREGLOS GENERALES-----------*/
 
+
+/* ----------- DESDE ACA BARRA LATERAL-----------*/
 #lateral{
   width: 10%;
   background: linear-gradient(to bottom right, #b95696, #f89142); /*si ponemos to bottom right podemos hacerlo en diagonal*/
@@ -37,12 +41,17 @@ a {
 #mybtn{
   padding-top: 1rem;
 }
+/*mybtn es el boton para el modal de inicio de sesión*/
 
 
 .icono{
   width:90%;
   height:4rem;
 }
+/*el icono son todos los iconos de la barra lateral*/
+
+/*----------- HASTA ACA BARRA LATERAL------------*/
+
 .main-container{
   margin-left: 10%;
   width: 90%;
@@ -53,23 +62,26 @@ a {
   align-items: center; /*centra en eje y*/
 }
 
-/*no se usa*/
+/*
+Row:  justify-content: X
+Column: Align items: x
+*/
+
 .info{
-  position:relative;
-  justify-content: center;
-  margin-left:60px;
-  margin-left: 100px;
+  /*usamos display flex para poder centrar con align-items (sin hacer uso de margenes)*/
+  /* position:relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*eje y*/
+  align-items: center; /*eje x*/
   border: 2px solid black;
   border-radius: 8px;
   width: 35rem;
   height:95vh;
-  left:-3rem;
-  box-shadow: 0 0 15px #3d4d2a98;
+  box-shadow: 0 0 15px #d26e735c;
 }
  
 .cora{
-    justify-content: center;
-    align-items: bottom;
     font-size:6rem;
     margin-top: 23rem;
 }
@@ -98,8 +110,6 @@ a {
     position: relative;
     border:solid 2px rgb(0, 0, 0);
     margin-top:2rem;
-    margin-left:3.5rem;
-    margin-right:3.5rem;
     width:80%;
     height:60vh;
     background-color: #de748198;
@@ -112,11 +122,9 @@ a {
 
 #container-datos{
     position: relative;
-    margin-top:2rem;
-    margin-left:3.5rem;
     width:80%;
-    /*no se le pone height para q el contenido sea el que determine el alto*/
-    color:#d7d7ce
+    /*no se le pone height para q el contenido sea el que determine el alto*/  
+  color:#d7d7ce;
 }
 
 #multimedia{
