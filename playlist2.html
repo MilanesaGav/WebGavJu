@@ -7,6 +7,7 @@
     <title>Musinder</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="playlist.css">
+    <link rel="stylesheet" href="modal2.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- ESO ES PARA USAR LA FUENTE DE "INTER" QUE USA ESOUND, DESPUES LLAMARLA DESDE CSS (SE NECESITA INTERNET PARA Q FUNCIONE)-->
 </head>
@@ -164,6 +165,19 @@
             </div>
           
           </form>
+    </div>
+</div>
+<div id="modal2" class="modalcerrarses"><!-- transparente-->
+    <div class="contenido-cerrarses"><!-- el contenido del modal (determina su ancho alto etcetc)-->   
+            <div class="container">  <!-- le agrega padding EXTERIOR DE LOS ELEMNTOS (BTNS, PREGUNTA)-->       
+                    <p id="question">¿Desea cerrar sesion?</p>
+                    
+                    <div id="container-flex-modal">
+                        <button  type="button" id="submit">Aceptar</button>
+                        <button type="button" id="cerrar">Cancelar</button>
+                    </div>
+            </div>
+             
     </div>
 </div>
 <script src="modal.js"></script>
