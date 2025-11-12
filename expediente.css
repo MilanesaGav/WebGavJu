@@ -40,8 +40,50 @@
     margin-left: 10%;
 }
 
+/* el degrade del tituloopp*/
+ #t1{
+    color:rgb(195,95,137);
+    text-shadow:0 0 8px rgb(195,95,137);
+ }
+
+#t2{
+    color:rgb(208,108,119);
+    text-shadow:0 0 8px rgb(208,108,119);
+ }
+
+#t3{
+    color:rgb(227,126,93);
+    text-shadow:0 0 8px rgb(227,126,93);
+ } 
+
+#t4{
+    color:rgb(242,139,74);
+    text-shadow:0 0 8px rgb(242,139,74);
+ }  
+
 .artista{
     font-size: 2rem;
     margin-top: -5%;
     
 }
+
+
+#art{
+    color:rgb(195,95,137);
+    text-shadow:0 0 8px rgb(195,95,137);
+ }
+
+ #top{
+     color:rgb(208,108,119);
+    text-shadow:0 0 8px rgb(208,108,119);
+ }
+
+ #tiempo{
+     color:rgb(227,126,93);
+    text-shadow:0 0 8px rgb(227,126,93);
+ }
+
+ #cancion{
+    color:rgb(242,139,74);
+    text-shadow:0 0 8px rgb(242,139,74);
+ }
